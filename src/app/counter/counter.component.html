@@ -1,0 +1,7 @@
+<div>
+  <button [disabled]="((count$ | async) ?? 0) <= 0" (click)="decrement()">
+    -
+  </button>
+  <b>{{ count$ | async }}</b>
+  <button (click)="increment()">+</button>
+</div>
